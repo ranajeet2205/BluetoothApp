@@ -253,6 +253,7 @@ public class MainActivity extends AppCompatActivity {
 
                     try {
                         path = getPath(this, uri);
+                        dataPath.setText(path);
 
                     } catch (URISyntaxException e) {
                         e.printStackTrace();
@@ -261,7 +262,7 @@ public class MainActivity extends AppCompatActivity {
 
                     // Get the file instance
 
-                    dataPath.setText(path);
+
                     // Initiate the upload
                 }
                 break;
